@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Registration System">
+    <link rel="icon" type="image/x-icon" href="/Resources/KB-DEV-Icon.PNG">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header  -->
+    <header>
+        <img src="Resources/KB-DEV-Icon.PNG" alt="Icon">
+        <div>
+            <h1>KB Learning <br> Hub</h1>
+        </div> 
+    </header>
+
+    <!-- Student Registration Form -->
+    <section>
+        <h2>Student Registration System</h2>
+        <p>Welcome to our  coaching institute. Register yourself with us. 
+        your details, including name, student ID, email, and contact number  
+        is neede to join a community dedicated to academic excellence. You can 
+        also effortlessly manage and update your details, ensuring a 
+        seamless experience throughout your journey with us.</p>
+
+        <h2>Register Student</h2>
+        <form id="studentForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" required placeholder="Enter student name">
+
+            <label for="studentId">Student ID:</label>
+            <input type="number" id="studentId" required placeholder="Enter student ID">
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" required placeholder="Enter email ID">
+
+            <label for="contact">Contact No.:</label>
+            <input type="tel" id="contact" required placeholder="Enter contact number">
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!--  Registered Students will be displayed here -->
+    <section>
+        <h2>Registered Students</h2>
+        <table id="studentsTable">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Student ID</th>
+                    <th>Email</th>
+                    <th>Contact No.</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Student records will be dynamically added here -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+<!-- footer-->
+<footer class="footer">
+    <p>&copy;2024 KB Learning Hub. All rights reserved.</p>
+</footer>
+
+</html>
