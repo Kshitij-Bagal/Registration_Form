@@ -153,6 +153,7 @@ button:active {
     width: 100%;
     bottom: 0;
     left: 0;
+    height: 15px;
 }
 
 .footer p {
